@@ -5,7 +5,7 @@
 "address": "Hyderabad, India",
 "facebook  Link": "https://facebook.com/testuser/",
 "instagramLink": "https://instagram.com/testuser/",
-"skills": { "Programming", "Photoshop"},
+"skills": [ "Programming", "Photoshop"],
 "projects": [
 {
 "name": "Project 1",
