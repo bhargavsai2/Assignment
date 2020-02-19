@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+
+    <title>User Profile</title>
+  </head>
+  <body>
+  	<section class="UserDashboard mt-5">
+  	<div class="container">
+
+
+   <!--button>Get JSON data</button>
+
+	<div></div-->
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+		<div class="card">
+  <div class="card-body profile-block">
+                    
+                    
+                            <div class="profile-image"> <img src="http://apps.orpine.com/themes/newLMS/assets/images/user.png" class="rounded-circle" alt="" width="50"> </div>
+                            <div>
+                                <h4 class="m-b-0 name-holder"><strong>Employee</strong></h4>
+                                <a href="tel:+91 9999933333" class="btn btn-primary">+91 9999933333</a>
+                            </div>
+                               <div class="m-t-15">
+                               	<a href="#"><img src="fb.png" width="20"></a>
+                               <a href="#"><img src="insta.png" width="20"></a>
+                            </div>                            
+                         
+            
+            </div>
+        </div>
+    </div>
+        <div class="col-md-8 col-lg-8">
+        	<div class="card">
+  			<div class="card-body">
+                           
+                           <div class="row">
+                           	<div class="col-md-6">
+                            <small class="text-muted">Addresss: </small>
+                            <p>Hyderabad, India</p>         
+
+                            <small class="text-muted">skills: </small>
+                            <p>Programming, Photoshop</p>
+            
+                          	</div>
+                          
+                        
+
+                     
+                           <div class="col-md-6">
+                            <small class="text-muted">projects: </small>
+                            <p class="mb-0"><strong>Project 1</strong></p>                            
+                            <span class="text-secondary">Some description</span>
+                            <p>Html, CSS, JavaScript</p>
+                           
+                      
+                           </div>
+                         
+                       
+
+                 
+                        
+                        </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+	/*https://raw.githubusercontent.com/bhargavsai2/Assignment/master/data.json*/
+ $("button").click(function(){
+   $.getJSON("https://raw.githubusercontent.com/bhargavsai2/Assignment/master/data.json", function(result){
+     $.each(result, function(i, field){
+
+       $("div").append(field + " ");
+       console.log(field);
+     });
+   });
+ });
+});
+</script>
+  </body>
+</html>
