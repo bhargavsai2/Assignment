@@ -11,6 +11,11 @@
 "name": "Project 1",
 "description": "Some description",
 "technologies": "Html, CSS, JavaScript"
+},
+ {
+"name": "Project 1",
+"description": "Some description",
+"technologies": "Html, CSS, JavaScript"
 }
  ]
 } 
